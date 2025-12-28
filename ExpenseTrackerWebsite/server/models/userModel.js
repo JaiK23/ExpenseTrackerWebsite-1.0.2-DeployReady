@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 const settingsSchema = new mongoose.Schema({
   theme: { type: String, enum: ['light', 'dark', 'system'], default: 'light' },
