@@ -1,0 +1,16 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "node server.js"
+restartPolicyType = "always"
+
+[variables]
+PORT = "8000"
+NODE_ENV = "production"
+MONGODB_URI = "mongodb+srv://jaiksailor7_db_user:wb4NOoOS23lcwNrx@cluster0.csjl5ko.mongodb.net/"
+JWT_SECRET = "c19c4f05b03aa40cbd93012912b5174213264e211c6308157b6127cc5ed987e1"
+JWT_EXPIRES_IN = "7d"
+CLIENT_URL="https://expensetracker102363.netlify.app"
+
+
