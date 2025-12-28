@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "cd client/expense-tracker && npm run dev",
+    "dev:client": "cd client/expense-tracker && npm run dev",
+    "dev:server": "cd server && npm start",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "lucide-react": "^0.553.0",
+    "react-is": "^19.2.0",
+    "recharts": "^3.4.1"
+  }
+}
