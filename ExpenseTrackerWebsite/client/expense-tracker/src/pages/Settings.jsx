@@ -26,10 +26,14 @@ function Settings() {
   }, []);
 
   const applyTheme = (theme) => {
+    const root = document.documentElement;
+    const body = document.body;
     if (theme === "dark") {
-      document.documentElement.classList.add("dark");
+      root.classList.add("dark");
+      body.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark");
+      root.classList.remove("dark");
+      body.classList.remove("dark");
     }
   };
 

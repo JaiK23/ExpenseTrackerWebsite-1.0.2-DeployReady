@@ -43,6 +43,25 @@ function SpendingChart({ expenses = [] }) {
     };
   });
 
+  const tooltipStyles = {
+    backgroundColor: "var(--card)",
+    borderColor: "var(--card-border)",
+    color: "var(--text)",
+    borderRadius: 12,
+    boxShadow: "0 12px 30px rgba(0,0,0,0.18)",
+    padding: "10px 12px",
+  };
+
+  const tooltipLabelStyle = {
+    color: "var(--text)",
+    fontWeight: 700,
+  };
+
+  const tooltipItemStyle = {
+    color: "var(--text)",
+    fontWeight: 600,
+  };
+
   return (
     <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
       <div className="flex items-center justify-between mb-6">
@@ -84,7 +103,12 @@ function SpendingChart({ expenses = [] }) {
             fontSize={12}
           />
 
-          <Tooltip formatter={(value) => [formatCurrency(value), "Spent"]} />
+          <Tooltip
+            formatter={(value) => [formatCurrency(value), "Spent"]}
+            contentStyle={tooltipStyles}
+            labelStyle={tooltipLabelStyle}
+            itemStyle={tooltipItemStyle}
+          />
 
           <Line
             type="monotone"
