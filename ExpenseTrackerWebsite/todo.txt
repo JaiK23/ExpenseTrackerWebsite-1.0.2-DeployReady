@@ -1,0 +1,4 @@
+to add possible predictions for upcoming bought items. ( use prediction analytics [like stock algorithms] )
+inventory management and take out or make bills 
+use proper machine learning and cv for proper OCR feature for bills
+add api intergation for fetching transactions from paytm account ( if allowed )
